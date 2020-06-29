@@ -5,18 +5,23 @@
 *sumber* : [https://medium.com/@riansyahtohamba/prinsip-s-o-l-i-d-d842d21169e8](https://medium.com/@riansyahtohamba/prinsip-s-o-l-i-d-d842d21169e8)
 
 **S : Single Responsibility Principle**
+
 Setiap kelas hanya punya satu tugas. Sehingga kelas itu cuman punya satu alasan untuk berubah,yakni merubah satu tugas yang diberikan padanya.
 
 **O : Open For extension, Closed For Modification Principle**
+
 Kelas yang sudah ditulisi dan disepakati behaviornya harus gampang diwariskan , dan tidak boleh diubah-ubah lagi. Cara mengubahnya dengan mewariskan ke kelas turunan yang punya behavior baru.
 
 **L : Liskov Substitute Principle**
-Kelas turunan harus bisa menjadi pegganti kelas parrent-nya. Tidak boleh methodnya dioverride lalu dikosongkan/lempar eksepsi (degenerate implementation)
+
+Kelas turunan harus bisa menjadi pegganti kelas parrent-nya. Tidak boleh methodnya dioverride lalu dikosongkan/lempar eksepsi (degenerate implementation).
 
 **I : Interface Segregation Principle**
-satu interface Tidak boleh menyediakan semua service (god class) bagi semua jenis client objek. Satu interface mempunyai tugas spesifik untuk tiap klien nya
+
+Satu interface Tidak boleh menyediakan semua service (god class) bagi semua jenis client objek. Satu interface mempunyai tugas spesifik untuk tiap klien nya.
 
 **D : Dependency inversion Principle**
+
 Modul level-tinggi tidak bergantung pada modul level rendah. Keduanya bergantung pada abstraksi. Sementara abstraksi tidak bergantung kepada detail. Malah detail yang harus bergantung pada abstraksi.
 
 ---
@@ -38,7 +43,7 @@ Diberikan suatu library dengan kelas berikut
 * RechargeStation
 
 Pada kode ini terdapat beberapa kelas yang mempunyai method yang tidak dapat digunakan (throw UnsupportedOpperationException), sehingga harus di refactor.
-Refactor dilakukan agar kode sesuai dengan prinsip **Interface Segregation**
+Refactor dilakukan agar kode sesuai dengan prinsip **Interface Segregation**.
 
 ## 5. Security Door
 Diberikan kelas sebagai berikut
@@ -47,4 +52,4 @@ Diberikan kelas sebagai berikut
 * interface SecurityUI
 
 SecurityManager dapat berinteraksi dengan userr dengan memvalidasi key card atau dengan pin code. Kedua method tersebut terdapat pada interfaace SeccurityUI. Validasi dilakukan oleh kelas SecurityCheck.
-Refactor dilakukan agar kode sesuai dengan prinsip **Interface Segregation**
+Refactor dilakukan agar kode sesuai dengan prinsip **Interface Segregation**.
