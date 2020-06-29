@@ -42,8 +42,7 @@ Diberikan suatu library dengan kelas berikut
 * Robot yang inherit terhadap Worker
 * RechargeStation
 
-Pada kode ini terdapat beberapa kelas yang mempunyai method yang tidak dapat digunakan (throw UnsupportedOpperationException), sehingga harus di refactor.
-Refactor dilakukan agar kode sesuai dengan prinsip **Interface Segregation**.
+Pada kode ini terdapat beberapa kelas yang mempunyai method yang tidak dapat digunakan (throw UnsupportedOpperationException), sehingga harus di refactor. Refactor dilakukan agar kode sesuai dengan prinsip **Interface Segregation**.
 
 ## 5. Security Door
 Diberikan kelas sebagai berikut
@@ -51,5 +50,4 @@ Diberikan kelas sebagai berikut
 * abstract class SecurityCheck
 * interface SecurityUI
 
-SecurityManager dapat berinteraksi dengan userr dengan memvalidasi key card atau dengan pin code. Kedua method tersebut terdapat pada interfaace SeccurityUI. Validasi dilakukan oleh kelas SecurityCheck.
-Refactor dilakukan agar kode sesuai dengan prinsip **Interface Segregation**.
+SecurityManager dapat berinteraksi dengan user dengan memvalidasi key card atau dengan pin code. Kedua method tersebut terdapat pada interfaace SecurityUI. Validasi dilakukan oleh kelas SecurityCheck. Refactor dilakukan agar kode sesuai dengan prinsip **Interface Segregation**.
